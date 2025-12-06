@@ -117,7 +117,7 @@ const Projects = () => {
               </p>
               
               <a 
-                href="/assets/certificates/internship-certificate.pdf" 
+                href="/certificate.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-dark text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-orange transition-colors duration-300"
