@@ -14,7 +14,7 @@ export const ReactIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/de
 export const NodeIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" {...props} />;
 export const SupabaseIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" {...props} />;
 export const JsIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" {...props} />;
-export const TailwindIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" {...props} />;
+export const TailwindIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" {...props} />;
 export const ViteIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" {...props} />;
 export const PostgresIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" {...props} />;
 export const ExpressIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" {...props} />;
@@ -23,7 +23,7 @@ export const CssIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devi
 export const GitIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" {...props} />;
 export const WordpressIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" {...props} />;
 export const CloudflareIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" {...props} />;
-export const VercelIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" {...props} />;
+export const VercelIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" {...props} />;
 export const NetlifyIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" {...props} />;
 export const DockerIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" {...props} />;
 export const MysqlIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" {...props} />;

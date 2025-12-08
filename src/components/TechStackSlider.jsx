@@ -49,10 +49,10 @@ const TechStackSlider = () => {
           {[...techStack, ...techStack, ...techStack, ...techStack].map((tech, index) => (
             <div 
               key={index} 
-              className="flex items-center space-x-2 grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+              className="flex items-center space-x-2 transition-transform duration-300 hover:scale-110 cursor-pointer"
               title={tech.name}
             >
-              <tech.Icon className="h-12 w-12 object-contain" />
+              <tech.Icon className="h-16 w-16 object-contain" />
             </div>
           ))}
         </motion.div>
