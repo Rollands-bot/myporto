@@ -158,14 +158,24 @@ const Projects = () => {
                  Digital Marketing Internship Certificate. Completed intensive training in technical SEO, performance optimization, and conversion rate strategies.
               </p>
               
-              <a 
-                href="/assets/Sertificate.jpg" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-dark text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-orange transition-colors duration-300"
-              >
-                <FileText size={18} /> View Certificate
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a 
+                  href="/assets/Sertiifikat.jpg" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-dark text-white px-5 py-3 rounded-xl text-sm font-bold hover:bg-brand-orange transition-colors duration-300"
+                >
+                  <FileText size={18} /> Certificate 1
+                </a>
+                <a 
+                  href="/assets/Sertificate.jpg" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-dark border border-gray-200 px-5 py-3 rounded-xl text-sm font-bold hover:bg-gray-50 hover:text-brand-orange hover:border-brand-orange transition-all duration-300"
+                >
+                  <FileText size={18} /> Certificate 2
+                </a>
+              </div>
            </div>
            <div className="flex-1 w-full h-64 md:h-auto bg-blue-50/50 rounded-2xl relative overflow-hidden min-h-[250px] flex items-center justify-center border border-blue-100">
                <div className="text-center p-8 relative z-10">
