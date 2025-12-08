@@ -23,6 +23,48 @@ const Projects = () => {
       {/* Bento Grid Layout */}
       <div className="grid md:grid-cols-12 gap-6 md:gap-8 h-auto">
         
+        {/* Project New: HRIS Pro */}
+        <motion.a 
+          href="https://hris-human-resource-information-sys.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="md:col-span-12 bento-card bg-gray-50 group relative overflow-hidden min-h-[500px] flex flex-col justify-between cursor-pointer"
+        >
+           <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+              <div className="bg-white p-3 rounded-full shadow-lg">
+                 <ArrowUpRight size={24} />
+              </div>
+           </div>
+
+           <div className="mt-auto z-10 relative">
+              <div className="flex gap-2 mb-4">
+                 <span className="px-3 py-1 bg-white border border-gray-200 rounded-full text-xs font-bold uppercase tracking-wider">HR Tech</span>
+                 <span className="px-3 py-1 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-bold uppercase tracking-wider">SaaS</span>
+              </div>
+              <h3 className="text-4xl font-bold mb-3">HRIS Pro - Enterprise System</h3>
+              <p className="text-gray-600 max-w-2xl text-lg mb-6">
+                 The complete solution for modern HR teams. Track attendance, manage payroll, and streamline recruitment in one place with real-time analytics.
+              </p>
+              <div className="flex flex-wrap gap-2 text-sm font-medium text-gray-500">
+                 <span>React</span> • <span>Tailwind CSS</span> • <span>Node.js</span> • <span>Vercel</span>
+              </div>
+           </div>
+
+           {/* Image */}
+           <div className="absolute inset-0 z-0">
+              <img 
+                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80" 
+                alt="HRIS Dashboard" 
+                className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+           </div>
+        </motion.a>
+
         {/* Project 1: Large Feature */}
         <motion.a 
           href="https://updatesimrs.vercel.app/login"
@@ -117,7 +159,7 @@ const Projects = () => {
               </p>
               
               <a 
-                href="/certificate.pdf" 
+                href="/assets/Sertificate.jpg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-dark text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-orange transition-colors duration-300"
