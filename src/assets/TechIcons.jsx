@@ -1,116 +1,29 @@
 import React from 'react';
 
-export const ReactIcon = (props) => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <circle cx="12" cy="12" r="2" fill="#61DAFB"/>
-    <g stroke="#61DAFB" strokeWidth="1" fill="none">
-      <ellipse cx="12" cy="12" rx="10" ry="4.5"/>
-      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/>
-      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"/>
-    </g>
-  </svg>
+// Helper to render original logos as images
+const IconImg = ({ src, alt, ...props }) => (
+  <img 
+    src={src} 
+    alt={alt} 
+    loading="lazy"
+    {...props} 
+  />
 );
 
-export const NodeIcon = (props) => (
-  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M16.004 0l-14.6 8.39v16.8l14.6 8.39 14.6-8.39v-16.8l-14.6-8.39zm-2.6 7.4h5.2v15h-5.2v-15zm10.8 10.5l-2.6 1.5-2.6-1.5v-3l2.6-1.5 2.6 1.5v3zm-10.8-10.5h5.2l-2.6 1.5-2.6-1.5z" fill="#339933"/>
-    <path fill="#339933" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm7.9-19.2l-2.7-1.5-5.2 3-5.2-3-2.7 1.5v3l2.7 1.5-2.7 1.5v3l7.9 4.5 7.9-4.5v-3l-2.7-1.5 2.7-1.5v-3z"/>
-  </svg>
-);
-
-export const SupabaseIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3ECF8E" {...props}>
-    <path d="M12.83 1.88a.6.6 0 00-.83 0L3.59 10.32a.6.6 0 00.43 1.02h6.06l-1.7 10.8a.6.6 0 001.03.49l8.41-8.44a.6.6 0 00-.43-1.02H11.33l1.7-10.8a.6.6 0 00-.2-.49z"/>
-  </svg>
-);
-
-export const JsIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F7DF1E" {...props}>
-    <path d="M0 0h24v24H0V0zm22.034 22.034H1.966V1.966h20.068v20.068zM12.35 16.66c.36 2.12 3.46 2.44 3.46-.3 0-2.02-4.38-1.56-4.38-5.1 0-2.08 2.66-3.22 4.94-2.02l-.6 1.8c-1.26-.6-2.6-.42-2.6.9 0 1.9 4.38 1.5 4.38 5.1 0 2.38-3.24 3.28-5.3 2.22l.1-2.6zm-4.86.3c.98 1.62 3.1 1.36 3.2-.6V6.46h2.2v10.6c0 3.4-3.46 4.12-5.4 2.38l.4-2.5z" fill="#000"/>
-    <path d="M0 0h24v24H0z" fill="#F7DF1E"/>
-    <path d="M19.5 19.5h-15v-15h15v15zm-13.5-13.5v12h12v-12h-12z" fill="none"/>
-    <path d="M11.944 15.75c-.278 1.315-1.57 1.66-2.37.955l-.557 1.216c1.67 1.49 4.22 1.04 4.22-1.62 0-1.365-3.03-1.07-3.03-2.7 0-1.016 1.42-1.43 2.46-1.04l.443-1.216c-1.8-.75-4.1-.2-4.1 2.22 0 2.58 2.93 2.25 2.93 2.185zm-5.444-.2c-.62.92-1.55.9-1.76-.15v-6.9h-1.5v7.35c0 1.9 1.8 2.5 3.26 1.45l-.26-1.45z" fill="#323330"/>
-  </svg>
-);
-
-export const TailwindIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#06B6D4" {...props}>
-    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-  </svg>
-);
-
-export const ViteIcon = (props) => (
-  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
-    <path d="M2.76 10.33L15.5 29.4l13.73-19.07L32 2.6l-3.4 1.8-12.6 23.4L3.4 4.4 0 2.6l2.76 7.73z" fill="#646CFF"/>
-    <path d="M10 4.4l6 15 6-15" stroke="#FFC300" strokeWidth="2"/>
-  </svg>
-);
-
-export const PostgresIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#336791" {...props}>
-    <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/>
-    <path d="M12 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-  </svg>
-);
-
-export const ExpressIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000" {...props}>
-    <path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-2.5 0a9.5 9.5 0 1 0-19 0 9.5 9.5 0 0 0 19 0z"/>
-    <text x="12" y="16" fontSize="10" textAnchor="middle" fill="white" fontWeight="bold">EX</text>
-  </svg>
-);
-
-export const HtmlIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#E34F26" {...props}>
-    <path d="M1.5 0h21l-1.91 21.563L12 24l-8.59-2.438L1.5 0zm7.1 16.7l-3.95-1.1-.75-8.4h9.2l-.3 3.4H6.3l.4 3.8 5.3 1.4 5.3-1.4.5-5.7h-3.5l-.2 2.3-2.1.6-2.1-.6-.1-1.4h5.8l.8-8H3.2l1.1 12.4 7.7 2.1 7.7-2.1.8-8.9H7.6z"/>
-  </svg>
-);
-
-export const CssIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#1572B6" {...props}>
-    <path d="M1.5 0h21l-1.91 21.563L12 24l-8.59-2.438L1.5 0zm7.1 16.7l-3.95-1.1-.75-8.4h9.2l-.3 3.4H6.3l.4 3.8 5.3 1.4 5.3-1.4.5-5.7h-3.5l-.2 2.3-2.1.6-2.1-.6-.1-1.4h5.8l.8-8H3.2l1.1 12.4 7.7 2.1 7.7-2.1.8-8.9H7.6z"/>
-  </svg>
-);
-
-export const GitIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F05032" {...props}>
-    <path d="M23.546 10.93L13.067.452a1.56 1.56 0 0 0-2.214 0L.452 10.854a1.562 1.562 0 0 0 0 2.215l10.48 10.478a1.563 1.563 0 0 0 2.214 0l10.4-10.4a1.564 1.564 0 0 0 0-2.215zM12.126 18.37a2.35 2.35 0 1 1 2.35-2.35 2.35 2.35 0 0 1-2.35 2.35zm-1.72-5.58l1.18-2.94 2.1 2.1a4.7 4.7 0 1 0 2.1-7.76l-2.94 1.18-1.18 2.94a2.35 2.35 0 1 1-1.26 4.48z"/>
-  </svg>
-);
-
-export const WordpressIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#21759B" {...props}>
-    <path d="M12.015 0C5.388 0 0 5.38 0 12.014c0 5.484 3.688 10.14 8.862 11.578l-4.394-11.97c-.082-.276-.125-.543-.125-.816 0-.787.634-1.443 1.422-1.443.473 0 .89.235 1.15.593l4.29 11.865 2.566-7.686-1.97-5.228c-.08-.214-.117-.43-.117-.64 0-.79.635-1.44 1.426-1.44.535 0 .996.3 1.23.74L16.8 12.26l3.147-9.208c.16-.47.605-.808 1.13-.808.66 0 1.197.536 1.197 1.198 0 .2-.05.39-.14.56l-5.77 14.9c2.82-2.06 4.638-5.36 4.638-9.088 0-6.634-5.378-12.014-12.016-12.014h.03zm-4.92 22.47c-3.668-2.024-6.14-5.925-6.14-10.394 0-.362.016-.72.05-1.075L6.175 23.31c.282-.17.607-.46.92-.84zm9.898.85c3.72-1.984 6.26-5.893 6.26-10.418 0-1.443-.258-2.832-.73-4.123l-5.53 14.54zm10.03-3.947c.64-2.19.99-4.507.99-6.907 0-1.75-.19-3.447-.545-5.076l-5.97 16.107c2.378-1.096 4.366-2.56 5.525-4.124z"/>
-  </svg>
-);
-
-export const CloudflareIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F38020" {...props}>
-    <path d="M9.463 9.636a3.372 3.372 0 0 1 3.21-2.367 3.372 3.372 0 0 1 3.21 2.367 2.555 2.555 0 0 1 2.188 1.112h-.025a2.56 2.56 0 0 1 2.188 1.404A2.56 2.56 0 0 1 19.675 16h-9.35a2.559 2.559 0 0 1-2.559-2.559c0-1.33.725-2.492 1.813-3.084.486-.81 1.284-1.402 2.222-1.58z" fill="#F38020"/>
-    <path d="M19.432 16.75H8.244a4.06 4.06 0 0 1-.986-8.005 5.368 5.368 0 0 1 10.172 1.063 4.059 4.059 0 0 1 1.998 6.94z"/>
-  </svg>
-);
-
-export const VercelIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" {...props}>
-    <path d="M24 22.525H0l12-21.05 12 21.05z"/>
-  </svg>
-);
-
-export const NetlifyIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#00C7B7" {...props}>
-    <path d="M6.49 19.09h-2.3v-7.24l4.96-2.78v7.12l-2.66 2.9zM2.3 10.75v7.24h2.3V9.64l-2.3 1.11zm15.2-1.1l2.3 1.1v8.34h-2.3v-7.24l-2.66-2.9v-7.12l4.96 2.78zm-4.96-5.56v7.12l-2.66 2.9h-2.3v-7.24l4.96-2.78z"/>
-  </svg>
-);
-
-export const DockerIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#2496ED" {...props}>
-    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.119a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V3.574a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.888c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V3.574a.185.185 0 00-.186-.185H5.136a.186.186 0 00-.186.185v1.888c0 .102.083.186.186.186m5.893 2.715h2.119a.186.186 0 00.186-.185V6.29a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V6.29a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V6.29a.185.185 0 00-.186-.186H2.172a.186.186 0 00-.186.185v1.888c0 .102.083.185.186.185m-2.922 0h2.12a.185.185 0 00.184-.185V6.29a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.184.185m2.964 2.715h2.119a.186.186 0 00.185-.186V9.006a.186.186 0 00-.186-.186H5.136a.186.186 0 00-.186.186v1.888c0 .102.083.185.186.185m-2.922 0h2.12a.185.185 0 00.184-.186V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.186v1.888c0 .102.082.185.184.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-1.843 0-2.55 1.087-2.55 1.087-.459.13-.904.205-1.334.223l.027-.02c-.1-.055-.204-.106-.31-.153V7.885a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v5.252c0 .054.02.106.059.143.013.013.692.662 1.584 1.095 1.397.676 3.59 1.01 6.366.893 1.24-.054 2.665-.29 4.118-.718.668-.197.645-.886.083-1.203-.88-.496-1.38-1.343-1.472-2.03a.25.25 0 00-.158-.215z"/>
-  </svg>
-);
-
-export const MysqlIcon = (props) => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#4479A1" {...props}>
-    <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm9.19 13.04c-.35 1.74-2.48 2.71-4.75 2.17-.52-.12-1.01-.31-1.47-.55.44-.46.79-1.02 1.02-1.63.35-1.74-.76-3.29-2.5-3.46-.52-.05-1.01.05-1.47.28.18-1.17.05-2.39-.38-3.46-.7-2.47-3.38-3.94-5.98-3.28-2.6.66-4.13 3.18-3.43 5.65.15.52.39 1 .71 1.44-.61-.05-1.23.04-1.83.28C.08 11.25-1.18 14.1 1.63 16.6c2.81 2.5 7.26 2.08 9.94.32 2.68-1.76 3.57-5.43 1.99-8.19.44.21.9.37 1.39.49 2.27.54 4.4-1.43 4.75-4.4.09-.78-.05-1.52-.38-2.17 1.35.63 2.23 1.96 2.23 3.52 0 .78-.22 1.51-.6 2.14.26.22.53.43.82.63z"/>
-  </svg>
-);
+export const ReactIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" {...props} />;
+export const NodeIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" {...props} />;
+export const SupabaseIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" {...props} />;
+export const JsIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" {...props} />;
+export const TailwindIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" {...props} />;
+export const ViteIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" {...props} />;
+export const PostgresIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" {...props} />;
+export const ExpressIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" {...props} />;
+export const HtmlIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" {...props} />;
+export const CssIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" {...props} />;
+export const GitIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" {...props} />;
+export const WordpressIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" {...props} />;
+export const CloudflareIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" {...props} />;
+export const VercelIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" {...props} />;
+export const NetlifyIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" {...props} />;
+export const DockerIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" {...props} />;
+export const MysqlIcon = (props) => <IconImg src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" {...props} />;
