@@ -52,9 +52,9 @@ const Hero = () => {
              {/* Abstract Shapes Decoration */}
              <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-tr from-brand-orange/20 to-blue-500/20 blur-3xl -z-10 rounded-full animate-pulse"></div>
              
-             <div className="relative group">
+             <div className="relative group -mt-10 md:-mt-16">
                {/* Unique Blob Shape Mask using border-radius */}
-               <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden border-4 border-white shadow-2xl transition-all duration-500 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]">
+               <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden border-4 border-white shadow-2xl transition-all duration-500 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]">
                   <img 
                     src="/assets/profile.png" 
                     alt="Wahyu Diyanto" 

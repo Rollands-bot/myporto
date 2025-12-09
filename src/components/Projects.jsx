@@ -23,6 +23,48 @@ const Projects = () => {
       {/* Bento Grid Layout */}
       <div className="grid md:grid-cols-12 gap-6 md:gap-8 h-auto">
         
+        {/* Project New: Point of Sales */}
+        <motion.a 
+          href="https://pointofsalesss.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="md:col-span-12 bento-card bg-gray-50 group relative overflow-hidden min-h-[500px] flex flex-col justify-between cursor-pointer"
+        >
+           <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+              <div className="bg-white p-3 rounded-full shadow-lg">
+                 <ArrowUpRight size={24} />
+              </div>
+           </div>
+
+           <div className="mt-auto z-10 relative">
+              <div className="flex gap-2 mb-4">
+                 <span className="px-3 py-1 bg-white border border-gray-200 rounded-full text-xs font-bold uppercase tracking-wider">Retail</span>
+                 <span className="px-3 py-1 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-bold uppercase tracking-wider">POS</span>
+              </div>
+              <h3 className="text-4xl font-bold mb-3">Point of Sales System</h3>
+              <p className="text-gray-600 max-w-2xl text-lg mb-6">
+                 A modern Point of Sales application designed to streamline retail transactions and inventory management.
+              </p>
+              <div className="flex flex-wrap gap-2 text-sm font-medium text-gray-500">
+                 <span>React</span> • <span>Tailwind CSS</span> • <span>Vercel</span>
+              </div>
+           </div>
+
+           {/* Image */}
+           <div className="absolute inset-0 z-0">
+              <img 
+                src="https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&q=80" 
+                alt="POS System" 
+                className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+           </div>
+        </motion.a>
+
         {/* Project New: HRIS Pro */}
         <motion.a 
           href="https://hris-human-resource-information-sys.vercel.app/"

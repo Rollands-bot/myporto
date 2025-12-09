@@ -84,9 +84,20 @@ const Navbar = () => {
            {/* Mobile Menu Toggle */}
            <button 
              onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-             className="relative z-50 p-2 text-dark hover:bg-gray-100 rounded-full transition-colors"
+             className="relative z-50 w-12 h-12 flex flex-col justify-center items-center gap-1.5 bg-white border border-gray-100 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
            >
-             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              <motion.span 
+                animate={mobileMenuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+                className="w-6 h-0.5 bg-dark block rounded-full transition-all duration-300 origin-center"
+              />
+              <motion.span 
+                animate={mobileMenuOpen ? { opacity: 0, x: 20 } : { opacity: 1, x: 0 }}
+                className="w-4 h-0.5 bg-brand-orange block rounded-full transition-all duration-300 origin-center self-end mr-3"
+              />
+              <motion.span 
+                animate={mobileMenuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+                className="w-6 h-0.5 bg-dark block rounded-full transition-all duration-300 origin-center"
+              />
            </button>
         </div>
 
