@@ -25,7 +25,7 @@ const Contact = () => {
         </motion.div>
 
         <div className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-medium">
-           <p>© 2025 Wahyu. Based in Indonesia.</p>
+           <p>© 2026 Wahyu. Based in Indonesia.</p>
            <div className="flex gap-6 mt-4 md:mt-0">
               <a href="https://www.linkedin.com/in/~wahyudiyanto/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
               <a href="https://github.com/Rollands-bot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
