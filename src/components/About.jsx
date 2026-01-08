@@ -52,9 +52,20 @@ const About = () => {
           
           <div className="space-y-12 pl-8">
              
-             {/* Item 1 */}
+             {/* Item 0 */}
              <div className="relative">
                 <div className="absolute -left-[37px] top-1 w-5 h-5 bg-brand-orange rounded-full border-4 border-white shadow-sm"></div>
+                <h3 className="text-xl font-bold text-dark">IT Programmer (Software Engineer)</h3>
+                <p className="text-gray-500 mb-2 font-medium">PT Cipta Kesehatan Mandiri</p>
+                <p className="text-sm text-gray-400 font-mono mb-3">Jan 2026 – Present</p>
+                <p className="text-gray-600 leading-relaxed">
+                   Leading internal application development, system maintenance, and technical support across hospital operations.
+                </p>
+             </div>
+
+             {/* Item 1 */}
+             <div className="relative">
+                <div className="absolute -left-[37px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white shadow-sm"></div>
                 <h3 className="text-xl font-bold text-dark">Web Developer</h3>
                 <p className="text-gray-500 mb-2 font-medium">PT. Pelatihan Profit International</p>
                 <p className="text-sm text-gray-400 font-mono mb-3">Feb 2025 – Jan 2026</p>
