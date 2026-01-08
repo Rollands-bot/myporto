@@ -22,6 +22,17 @@ const PROJECTS = [
     type: 'web'
   },
   {
+    id: 7,
+    title: 'SyncCAD - Performance SEO',
+    category: 'marketing',
+    tags: ['Technical SEO', 'Performance'],
+    description: 'High-performance web architecture optimized for maximum search visibility and lightning-fast core web vitals.',
+    tech: ['Next.js', 'SEO Optimization', 'Core Web Vitals'],
+    link: 'https://synccad.com/',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+    type: 'web'
+  },
+  {
     id: 1,
     title: 'Point of Sales System',
     category: 'dev',
