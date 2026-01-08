@@ -18,7 +18,7 @@ const PROJECTS = [
     description: 'AI-powered platform for generating short video clips and viral content from long-form videos automatically.',
     tech: ['Next.js', 'Python', 'AI Video API', 'Cloudinary'],
     link: 'https://www.clipink.id/',
-    image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80',
+    image: '/assets/clipink.png',
     type: 'web'
   },
   {
