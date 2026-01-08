@@ -12,22 +12,22 @@ const CATEGORIES = [
 const PROJECTS = [
   {
     id: 0,
-    title: 'ClipInk AI',
+    title: 'Clipink - AI Video Shorts',
     category: 'ai',
     tags: ['AI Video', 'SaaS'],
     description: 'AI-powered platform for generating short video clips and viral content from long-form videos automatically.',
-    tech: ['Next.js', 'Python', 'AI Video API', 'Cloudinary'],
+    tech: ['Next.js', 'PostHog', 'AI Video API', 'React' , 'Vercel' , 'Railway'],
     link: 'https://www.clipink.id/',
     image: '/assets/clipink.png',
     type: 'web'
   },
   {
     id: 7,
-    title: 'SyncCAD - Performance SEO',
+    title: 'SyncCAD - Desain Grafis',
     category: 'marketing',
     tags: ['Technical SEO', 'Performance'],
     description: 'High-performance web architecture optimized for maximum search visibility and lightning-fast core web vitals.',
-    tech: ['Next.js', 'SEO Optimization', 'Core Web Vitals'],
+    tech: ['Cms Wordpress', 'Elementor Pro', 'SEO'],
     link: 'https://synccad.com/',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
     type: 'web'
@@ -78,7 +78,7 @@ const PROJECTS = [
   },
   {
     id: 5,
-    title: 'PT Pelatihan Profit',
+    title: 'PT Pelatihan Profit International',
     category: 'dev',
     tags: ['Corporate', 'Education'],
     description: 'Official website for a leading training institution. Integrated course catalogs and registration systems.',
