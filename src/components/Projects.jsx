@@ -71,7 +71,7 @@ const PROJECTS = [
     category: 'ai',
     tags: ['Automation', 'Bot'],
     description: 'Autonomous WhatsApp/Telegram agent that resolves 70% of customer queries without human input.',
-    tech: ['Python', 'OpenAI API', 'Docker'],
+    tech: ['n8n', 'Python', 'OpenAI API', 'Docker'],
     link: '#',
     image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80',
     type: 'ai'
