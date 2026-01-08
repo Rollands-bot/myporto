@@ -25,7 +25,7 @@ const PROJECTS = [
     id: 7,
     title: 'SyncCAD - Desain Grafis',
     category: 'marketing',
-    tags: ['Technical SEO', 'Performance'],
+    tags: ['Marketing', 'Performance'],
     description: 'High-performance web architecture optimized for maximum search visibility and lightning-fast core web vitals.',
     tech: ['Cms Wordpress', 'Elementor Pro', 'SEO'],
     link: 'https://synccad.com/',
