@@ -18,12 +18,16 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed font-medium">
             <p>
-              I don't just "write software". I engineer systems that solve actual business bottlenecks. 
-              Founders hire me when they need to move from <span className="bg-brand-orange/10 text-brand-orange px-1">MVP to Scale</span> without breaking things.
+              I don't just ship code — I architect resilient systems that dissolve real business bottlenecks.
+              Teams bring me in when they need to move from <span className="bg-brand-orange/10 text-brand-orange px-1">MVP to Scale</span> without breaking production, burning runway, or compromising integrity.
             </p>
             <p>
-              My background blends deep technical expertise (Full JS Ecosystem) with a pragmatic approach to operations. 
-              I automate the boring stuff so your team can focus on growth.
+              With years of senior engineering experience across the full JavaScript ecosystem, AI integration, and cloud infrastructure,
+              I design platforms that are fast, maintainable, and built to last — automating the tedious so your team can focus on growth.
+            </p>
+            <p>
+              Security isn't an afterthought in my work — it's woven into every layer. From <span className="bg-brand-orange/10 text-brand-orange px-1">hardened authentication</span> and encrypted data flows to strict access control and proactive vulnerability mitigation,
+              I make sure the systems I build don't just scale — they stay protected.
             </p>
           </div>
 
@@ -31,7 +35,7 @@ const About = () => {
           <div className="mt-10">
              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Core Stack</h3>
              <div className="flex flex-wrap gap-2">
-                {['React', 'Node.js', 'PostgreSQL','Supabase','Cloudflare','Vercel','Netlify','n8n','Docker'].map((tech) => (
+                {['React', 'Node.js', 'PostgreSQL','Supabase','Cloudflare','Vercel','Netlify','n8n','Docker','Antropic','OpenAI','OpenClaw'].map((tech) => (
                   <span key={tech} className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-semibold text-dark shadow-sm">
                     {tech}
                   </span>
@@ -55,18 +59,29 @@ const About = () => {
              {/* Item 0 */}
              <div className="relative">
                 <div className="absolute -left-[37px] top-1 w-5 h-5 bg-brand-orange rounded-full border-4 border-white shadow-sm"></div>
-                <h3 className="text-xl font-bold text-dark">IT Programmer (Software Engineer)</h3>
-                <p className="text-gray-500 mb-2 font-medium">PT Cipta Kesehatan Mandiri</p>
-                <p className="text-sm text-gray-400 font-mono mb-3">Jan 2026 – Present</p>
+                <h3 className="text-xl font-bold text-dark">AI Specialist</h3>
+                <p className="text-gray-500 mb-2 font-medium">PT Aneka Bintang Gading (Holywings Group)</p>
+                <p className="text-sm text-gray-400 font-mono mb-3">Apr 2026 – Present</p>
                 <p className="text-gray-600 leading-relaxed">
-                   Leading internal application development, system maintenance, and technical support across hospital operations.
+                   Designing and deploying AI-driven automation and intelligent workflows to power business operations across the Holywings Group.
                 </p>
              </div>
 
              {/* Item 1 */}
              <div className="relative">
                 <div className="absolute -left-[37px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white shadow-sm"></div>
-                <h3 className="text-xl font-bold text-dark">Web Developer</h3>
+                <h3 className="text-xl font-bold text-dark">IT Programmer (Software Engineer)</h3>
+                <p className="text-gray-500 mb-2 font-medium">PT Cipta Kesehatan Mandiri (RS Keluarga Kita)</p>
+                <p className="text-sm text-gray-400 font-mono mb-3">Jan 2026 – Mar 2026</p>
+                <p className="text-gray-600 leading-relaxed">
+                   Led internal application development, system maintenance, and technical support across hospital operations.
+                </p>
+             </div>
+
+             {/* Item 2 */}
+             <div className="relative">
+                <div className="absolute -left-[37px] top-1 w-5 h-5 bg-gray-300 rounded-full border-4 border-white shadow-sm"></div>
+                <h3 className="text-xl font-bold text-dark">Fullstack Developer</h3>
                 <p className="text-gray-500 mb-2 font-medium">PT. Pelatihan Profit International</p>
                 <p className="text-sm text-gray-400 font-mono mb-3">Feb 2025 – Jan 2026</p>
                 <p className="text-gray-600 leading-relaxed">

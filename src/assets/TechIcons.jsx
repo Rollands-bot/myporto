@@ -2,10 +2,11 @@ import React from 'react';
 // Importing icons from react-icons (SimpleIcons 'si', DevIcons 'di', FontAwesome 'fa')
 // These are colored by default or take text color. We will apply colors via props or style.
 
-import { 
-  SiReact, SiNodedotjs, SiSupabase, SiJavascript, SiTailwindcss, 
-  SiVite, SiPostgresql, SiExpress, SiHtml5, SiCss3, SiGit, 
-  SiWordpress, SiCloudflare, SiVercel, SiNetlify, SiDocker, SiMysql 
+import {
+  SiReact, SiNodedotjs, SiSupabase, SiJavascript, SiTailwindcss,
+  SiVite, SiPostgresql, SiExpress, SiHtml5, SiCss3, SiGit,
+  SiWordpress, SiCloudflare, SiVercel, SiNetlify, SiDocker, SiMysql,
+  SiAnthropic, SiOpenai, SiClaude
 } from 'react-icons/si';
 
 // Wrapper to standardize size and add color
@@ -31,3 +32,6 @@ export const VercelIcon = (props) => <IconWrapper Icon={SiVercel} color="#000000
 export const NetlifyIcon = (props) => <IconWrapper Icon={SiNetlify} color="#00C7B7" {...props} />;
 export const DockerIcon = (props) => <IconWrapper Icon={SiDocker} color="#2496ED" {...props} />;
 export const MysqlIcon = (props) => <IconWrapper Icon={SiMysql} color="#4479A1" {...props} />;
+export const AnthropicIcon = (props) => <IconWrapper Icon={SiAnthropic} color="#D97757" {...props} />;
+export const OpenaiIcon = (props) => <IconWrapper Icon={SiOpenai} color="#412991" {...props} />;
+export const OpenClawIcon = (props) => <IconWrapper Icon={SiClaude} color="#D97757" {...props} />;

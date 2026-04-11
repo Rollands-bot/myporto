@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  ReactIcon, NodeIcon, SupabaseIcon, JsIcon, TailwindIcon, 
+import {
+  ReactIcon, NodeIcon, SupabaseIcon, JsIcon, TailwindIcon,
   ViteIcon, PostgresIcon, ExpressIcon, HtmlIcon, CssIcon, GitIcon,
-  WordpressIcon, CloudflareIcon, VercelIcon, NetlifyIcon, DockerIcon, MysqlIcon
+  WordpressIcon, CloudflareIcon, VercelIcon, NetlifyIcon, DockerIcon, MysqlIcon,
+  AnthropicIcon, OpenaiIcon, OpenClawIcon
 } from '../assets/TechIcons';
 
 const techStack = [
@@ -23,7 +24,10 @@ const techStack = [
   { name: "Express", Icon: ExpressIcon },
   { name: "HTML5", Icon: HtmlIcon },
   { name: "CSS3", Icon: CssIcon },
-  { name: "Git", Icon: GitIcon }
+  { name: "Git", Icon: GitIcon },
+  { name: "Anthropic", Icon: AnthropicIcon },
+  { name: "OpenAI", Icon: OpenaiIcon },
+  { name: "OpenClaw", Icon: OpenClawIcon }
 ];
 
 const TechStackSlider = () => {
