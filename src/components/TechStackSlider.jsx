@@ -4,7 +4,8 @@ import {
   ReactIcon, NodeIcon, SupabaseIcon, JsIcon, TailwindIcon,
   ViteIcon, PostgresIcon, ExpressIcon, HtmlIcon, CssIcon, GitIcon,
   WordpressIcon, CloudflareIcon, VercelIcon, NetlifyIcon, DockerIcon, MysqlIcon,
-  AnthropicIcon, OpenaiIcon, OpenClawIcon
+  AnthropicIcon, OpenaiIcon, OpenClawIcon,
+  AwsIcon, IbmIcon, MicrosoftIcon, MetaIcon, HuggingFaceIcon
 } from '../assets/TechIcons';
 
 const techStack = [
@@ -27,7 +28,12 @@ const techStack = [
   { name: "Git", Icon: GitIcon },
   { name: "Anthropic", Icon: AnthropicIcon },
   { name: "OpenAI", Icon: OpenaiIcon },
-  { name: "OpenClaw", Icon: OpenClawIcon }
+  { name: "OpenClaw", Icon: OpenClawIcon },
+  { name: "AWS", Icon: AwsIcon },
+  { name: "IBM", Icon: IbmIcon },
+  { name: "Microsoft", Icon: MicrosoftIcon },
+  { name: "Meta", Icon: MetaIcon },
+  { name: "Hugging Face", Icon: HuggingFaceIcon }
 ];
 
 const TechStackSlider = () => {
