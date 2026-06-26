@@ -7,7 +7,7 @@ import {
   SiVite, SiPostgresql, SiExpress, SiHtml5, SiCss3, SiGit,
   SiWordpress, SiCloudflare, SiVercel, SiNetlify, SiDocker, SiMysql,
   SiAnthropic, SiOpenai, SiClaude,
-  SiAmazonwebservices, SiMeta, SiHuggingface
+  SiAmazonwebservices, SiMeta, SiHuggingface, SiN8N
 } from 'react-icons/si';
 import { FaMicrosoft } from 'react-icons/fa';
 
@@ -41,6 +41,7 @@ export const AwsIcon = (props) => <IconWrapper Icon={SiAmazonwebservices} color=
 export const MicrosoftIcon = (props) => <IconWrapper Icon={FaMicrosoft} color="#5E5E5E" {...props} />;
 export const MetaIcon = (props) => <IconWrapper Icon={SiMeta} color="#0467DF" {...props} />;
 export const HuggingFaceIcon = (props) => <IconWrapper Icon={SiHuggingface} color="#FFD21E" {...props} />;
+export const N8nIcon = (props) => <IconWrapper Icon={SiN8N} color="#EA4B71" {...props} />;
 
 // IBM has no entry in react-icons (trademark), so we ship the official 8-bar logo
 // as an inline SVG. Its logo is wide (512x205), so we let width auto-size from the

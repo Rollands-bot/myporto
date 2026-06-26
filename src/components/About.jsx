@@ -1,5 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import {
+  ReactIcon, NodeIcon, PostgresIcon, SupabaseIcon, CloudflareIcon,
+  VercelIcon, NetlifyIcon, N8nIcon, DockerIcon, AnthropicIcon, OpenaiIcon, OpenClawIcon
+} from '../assets/TechIcons';
+
+// Same icon set used in the "Powered By Modern Technologies" slider
+const coreStack = [
+  { name: 'React', Icon: ReactIcon },
+  { name: 'Node.js', Icon: NodeIcon },
+  { name: 'PostgreSQL', Icon: PostgresIcon },
+  { name: 'Supabase', Icon: SupabaseIcon },
+  { name: 'Cloudflare', Icon: CloudflareIcon },
+  { name: 'Vercel', Icon: VercelIcon },
+  { name: 'Netlify', Icon: NetlifyIcon },
+  { name: 'n8n', Icon: N8nIcon },
+  { name: 'Docker', Icon: DockerIcon },
+  { name: 'Anthropic', Icon: AnthropicIcon },
+  { name: 'OpenAI', Icon: OpenaiIcon },
+  { name: 'OpenClaw', Icon: OpenClawIcon },
+];
 
 const About = () => {
   return (
@@ -35,9 +55,10 @@ const About = () => {
           <div className="mt-10">
              <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Core Stack</h3>
              <div className="flex flex-wrap gap-2">
-                {['React', 'Node.js', 'PostgreSQL','Supabase','Cloudflare','Vercel','Netlify','n8n','Docker','Antropic','OpenAI','OpenClaw'].map((tech) => (
-                  <span key={tech} className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-semibold text-dark shadow-sm">
-                    {tech}
+                {coreStack.map(({ name, Icon }) => (
+                  <span key={name} className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-semibold text-dark shadow-sm">
+                    <Icon className="h-4 w-4 object-contain shrink-0" aria-hidden="true" />
+                    {name}
                   </span>
                 ))}
              </div>
