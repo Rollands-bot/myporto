@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -19,23 +19,13 @@ const Contact = () => {
              I'm currently accepting new projects. If you need a technical partner who can ship full-stack products and agentic AI automation, let's connect.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="mailto:mrwahyudiyanto@gmail.com" className="inline-flex items-center gap-4 bg-white text-dark px-10 py-5 rounded-full text-lg font-bold hover:scale-105 transition-transform duration-300">
-               Start a Project <ArrowRight />
-            </a>
-            <a
-              href="https://wa.me/6282250423738"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 border border-white/20 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:scale-105 transition-all duration-300"
-            >
-               <MessageCircle /> WhatsApp
-            </a>
-          </div>
+          <a href="mailto:mrwahyudiyanto@gmail.com" className="inline-flex items-center gap-4 bg-white text-dark px-10 py-5 rounded-full text-lg font-bold hover:scale-105 transition-transform duration-300">
+             Start a Project <ArrowRight />
+          </a>
         </motion.div>
 
         <div className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-medium">
-           <p>© 2026 Wahyudiyanto. Based in Indonesia.</p>
+           <p>© 2026 wuuu. Based in Indonesia.</p>
            <div className="flex gap-6 mt-4 md:mt-0">
               <a href="https://linkedin.com/in/wuuu" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
               <a href="https://github.com/Rollands-bot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>

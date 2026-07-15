@@ -39,7 +39,7 @@ const PROJECTS = [
     tags: ['Three.js', 'WebGL'],
     description: 'Immersive product-customization experiences for European fashion & lifestyle brands (Wearebrand, France) — engagement up 40%, load time down from 5s to 1.8s.',
     tech: ['Three.js', 'React Three Fiber', 'Laravel', 'GitHub Actions'],
-    link: '#',
+    link: 'https://wearebrand.io',
     image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80',
     type: 'web'
   },
