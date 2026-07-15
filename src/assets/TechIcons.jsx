@@ -7,7 +7,8 @@ import {
   SiVite, SiPostgresql, SiExpress, SiHtml5, SiCss3, SiGit,
   SiWordpress, SiCloudflare, SiVercel, SiNetlify, SiDocker, SiMysql,
   SiAnthropic, SiOpenai, SiClaude,
-  SiAmazonwebservices, SiMeta, SiHuggingface, SiN8N
+  SiAmazonwebservices, SiMeta, SiHuggingface, SiN8N,
+  SiLaravel, SiGo, SiThreedotjs, SiRailway
 } from 'react-icons/si';
 import { FaMicrosoft } from 'react-icons/fa';
 
@@ -42,6 +43,10 @@ export const MicrosoftIcon = (props) => <IconWrapper Icon={FaMicrosoft} color="#
 export const MetaIcon = (props) => <IconWrapper Icon={SiMeta} color="#0467DF" {...props} />;
 export const HuggingFaceIcon = (props) => <IconWrapper Icon={SiHuggingface} color="#FFD21E" {...props} />;
 export const N8nIcon = (props) => <IconWrapper Icon={SiN8N} color="#EA4B71" {...props} />;
+export const LaravelIcon = (props) => <IconWrapper Icon={SiLaravel} color="#FF2D20" {...props} />;
+export const GolangIcon = (props) => <IconWrapper Icon={SiGo} color="#00ADD8" {...props} />;
+export const ThreeJsIcon = (props) => <IconWrapper Icon={SiThreedotjs} color="#000000" {...props} />;
+export const RailwayIcon = (props) => <IconWrapper Icon={SiRailway} color="#0B0D0E" {...props} />;
 
 // IBM has no entry in react-icons (trademark), so we ship the official 8-bar logo
 // as an inline SVG. Its logo is wide (512x205), so we let width auto-size from the

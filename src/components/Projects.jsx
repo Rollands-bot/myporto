@@ -12,13 +12,79 @@ const CATEGORIES = [
 const PROJECTS = [
   {
     id: 0,
-    title: 'Clipink - AI Video Shorts',
+    title: 'Omnichannel AI CRM — Holywings Group',
+    category: 'ai',
+    tags: ['Agentic AI', 'CRM'],
+    description: 'AI chatbots & CRM unifying WhatsApp, Instagram, TikTok & YouTube into one dashboard for 200+ CS agents — 85% of inquiries resolved automatically through agentic intent routing.',
+    tech: ['Meta API', 'LLM Orchestration', 'n8n', 'Node.js', 'PostgreSQL'],
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80',
+    type: 'ai'
+  },
+  {
+    id: 1,
+    title: 'Clipink — AI Video Clipper',
     category: 'ai',
     tags: ['AI Video', 'SaaS'],
-    description: 'AI-powered platform for generating short video clips and viral content from long-form videos automatically.',
-    tech: ['Next.js', 'PostHog', 'AI Video API', 'React' , 'Vercel' , 'Railway'],
+    description: 'Founded a platform that auto-clips & distributes short-form video from live streams. AI highlight detection cut editing time from 3 hours to 45 minutes — 50+ creators, 1M+ views/month.',
+    tech: ['Golang', 'React', 'AI Video Processing', 'Railway'],
     link: 'https://www.clipink.id/',
     image: '/assets/clipink.png',
+    type: 'web'
+  },
+  {
+    id: 2,
+    title: 'Interactive 3D Brand Campaigns',
+    category: 'dev',
+    tags: ['Three.js', 'WebGL'],
+    description: 'Immersive product-customization experiences for European fashion & lifestyle brands (Wearebrand, France) — engagement up 40%, load time down from 5s to 1.8s.',
+    tech: ['Three.js', 'React Three Fiber', 'Laravel', 'GitHub Actions'],
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80',
+    type: 'web'
+  },
+  {
+    id: 3,
+    title: 'SIMRS Hospital ERP',
+    category: 'dev',
+    tags: ['Healthcare', 'Enterprise'],
+    description: 'Hospital ERP serving 500+ daily medical staff with 15+ REST APIs for BPJS, pharmacy & laboratory integrations — 99.9% availability during peak hours.',
+    tech: ['React', 'Laravel', 'MySQL', 'REST API'],
+    link: 'https://updatesimrs.vercel.app/login',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
+    type: 'web'
+  },
+  {
+    id: 4,
+    title: 'Point of Sales System',
+    category: 'dev',
+    tags: ['Retail', 'POS'],
+    description: 'A modern Point of Sales application designed to streamline retail transactions and inventory management.',
+    tech: ['React', 'Tailwind CSS', 'Vercel'],
+    link: 'https://pointofsalesss.vercel.app/',
+    image: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&q=80',
+    type: 'web'
+  },
+  {
+    id: 5,
+    title: 'HRIS Pro - Enterprise',
+    category: 'dev',
+    tags: ['HR Tech', 'SaaS'],
+    description: 'The complete solution for modern HR teams. Track attendance, manage payroll, and streamline recruitment.',
+    tech: ['React', 'Tailwind CSS', 'Node.js', 'Vercel'],
+    link: 'https://hris-human-resource-information-sys.vercel.app/',
+    image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80',
+    type: 'web'
+  },
+  {
+    id: 6,
+    title: 'PT Pelatihan Profit International',
+    category: 'dev',
+    tags: ['Corporate', 'Education'],
+    description: 'Official website for a leading training institution. Integrated course catalogs and registration systems.',
+    tech: ['WordPress', 'MySQL', 'SEO'],
+    link: 'https://www.ptppi.id/',
+    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80',
     type: 'web'
   },
   {
@@ -33,67 +99,12 @@ const PROJECTS = [
     type: 'web'
   },
   {
-    id: 1,
-    title: 'Point of Sales System',
-    category: 'dev',
-    tags: ['Retail', 'POS'],
-    description: 'A modern Point of Sales application designed to streamline retail transactions and inventory management.',
-    tech: ['React', 'Tailwind CSS', 'Vercel'],
-    link: 'https://pointofsalesss.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&q=80',
-    type: 'web'
-  },
-  {
-    id: 2,
-    title: 'HRIS Pro - Enterprise',
-    category: 'dev',
-    tags: ['HR Tech', 'SaaS'],
-    description: 'The complete solution for modern HR teams. Track attendance, manage payroll, and streamline recruitment.',
-    tech: ['React', 'Tailwind CSS', 'Node.js', 'Vercel'],
-    link: 'https://hris-human-resource-information-sys.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80',
-    type: 'web'
-  },
-  {
-    id: 3,
-    title: 'SIMRS Hospital OS',
-    category: 'dev',
-    tags: ['Healthcare', 'Enterprise'],
-    description: 'Comprehensive hospital OS handling 50k+ patient records with real-time sync and HIPAA compliance.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
-    link: 'https://updatesimrs.vercel.app/login',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
-    type: 'web'
-  },
-  {
-    id: 4,
-    title: 'AutoSupport AI',
-    category: 'ai',
-    tags: ['Automation', 'Bot'],
-    description: 'Autonomous WhatsApp/Telegram agent that resolves 70% of customer queries without human input.',
-    tech: ['n8n', 'Python', 'OpenAI API', 'Docker'],
-    link: '#',
-    image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80',
-    type: 'ai'
-  },
-  {
-    id: 5,
-    title: 'PT Pelatihan Profit International',
-    category: 'dev',
-    tags: ['Corporate', 'Education'],
-    description: 'Official website for a leading training institution. Integrated course catalogs and registration systems.',
-    tech: ['WordPress', 'MySQL', 'SEO'],
-    link: 'https://www.ptppi.id/',
-    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80',
-    type: 'web'
-  },
-  {
-    id: 6,
+    id: 8,
     title: 'Rocket Digital Performance',
     category: 'marketing',
     tags: ['SEO', 'Optimization'],
-    description: 'Digital Marketing Internship. Intensive training in technical SEO, performance optimization, and conversion rate strategies.',
-    tech: ['Google Analytics', 'Semrush', 'PageSpeed'],
+    description: 'Data-driven SEO & paid campaigns: +50% organic traffic in 3 months, CTR 25% above benchmark, and CPA down 12% through A/B testing.',
+    tech: ['Google Analytics', 'Google Ads', 'Meta Ads', 'SEO'],
     link: '/assets/Sertiifikat.jpg',
     image: '/assets/Sertiifikat.jpg',
     type: 'cert',

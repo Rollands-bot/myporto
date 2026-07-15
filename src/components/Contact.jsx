@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -16,18 +16,28 @@ const Contact = () => {
             Ready to scale?
           </h2>
           <p className="text-gray-400 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed">
-             I'm currently accepting new projects. If you need a technical partner who understands business velocity, let's connect.
+             I'm currently accepting new projects. If you need a technical partner who can ship full-stack products and agentic AI automation, let's connect.
           </p>
-          
-          <a href="mailto:mrwahyudiyanto@gmail.com" className="inline-flex items-center gap-4 bg-white text-dark px-10 py-5 rounded-full text-lg font-bold hover:scale-105 transition-transform duration-300">
-             Start a Project <ArrowRight />
-          </a>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="mailto:mrwahyudiyanto@gmail.com" className="inline-flex items-center gap-4 bg-white text-dark px-10 py-5 rounded-full text-lg font-bold hover:scale-105 transition-transform duration-300">
+               Start a Project <ArrowRight />
+            </a>
+            <a
+              href="https://wa.me/6282250423738"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border border-white/20 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:scale-105 transition-all duration-300"
+            >
+               <MessageCircle /> WhatsApp
+            </a>
+          </div>
         </motion.div>
 
         <div className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-medium">
-           <p>© 2026 Wahyu. Based in Indonesia.</p>
+           <p>© 2026 Wahyudiyanto. Based in Indonesia.</p>
            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="https://www.linkedin.com/in/~wahyudiyanto/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://linkedin.com/in/wuuu" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
               <a href="https://github.com/Rollands-bot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
            </div>
         </div>

@@ -22,15 +22,15 @@ const Hero = () => {
         </div>
 
         <h1 className="text-display text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight">
-          Software <span className="text-gray-400">Engineer.</span><br />
-          <span className="text-brand-orange text-4xl md:text-6xl lg:text-7xl block mt-2">AI Automation Enthusiast.</span>
+          Software <span className="text-gray-400">Engineer</span><br />
+          <span className="text-brand-orange text-4xl md:text-6xl lg:text-7xl block mt-2">&amp; AI Specialist.</span>
         </h1>
 
         <div className="grid md:grid-cols-12 gap-10 items-center mt-12">
           <div className="md:col-span-7 order-2 md:order-1">
              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium mb-10">
-               I build <span className="text-dark">high-velocity software</span> and <span className="text-dark">autonomous systems</span> for ambitious founders. 
-               Combining technical precision with business speed.
+               6+ years shipping <span className="text-dark">end-to-end platforms</span> — ERP, POS, HRIS — and <span className="text-dark">AI chatbots &amp; omnichannel CRM</span> across Meta, TikTok &amp; YouTube.
+               Currently focused on agentic AI and LLM orchestration that turn operations into autopilot.
              </p>
              
              <div className="flex gap-4 max-w-md">
@@ -57,7 +57,7 @@ const Hero = () => {
                <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden border-4 border-white shadow-2xl transition-all duration-500 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]">
                   <img 
                     src="/assets/profile.png" 
-                    alt="Wahyu Diyanto" 
+                    alt="Wahyudiyanto"
                     className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-in-out"
                   />
                   {/* Overlay Gradient on Hover */}
@@ -82,13 +82,36 @@ const Hero = () => {
              </div>
           </div>
         </div>
+
+        {/* Impact Proof Strip */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 mt-20 pt-10 border-t border-gray-200">
+          {[
+            { value: '6+', label: 'Years Experience' },
+            { value: '70%', label: 'Ops Cost Reduced' },
+            { value: '200+', label: 'CS Agents Empowered' },
+            { value: '1M+', label: 'Monthly Views Generated' },
+          ].map((stat, i) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 + i * 0.12, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <p className="text-display text-4xl md:text-5xl">
+                {stat.value.replace(/[+%]$/, '')}
+                <span className="text-brand-orange">{stat.value.match(/[+%]$/)?.[0]}</span>
+              </p>
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-2">{stat.label}</p>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       {/* Marquee Text */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden whitespace-nowrap py-6 opacity-10 pointer-events-none">
         <div className="animate-marquee inline-block">
-          <span className="text-[120px] font-black mx-8">SOFTWARE ENGINEERING AI AUTOMATION SCALABILITY PERFORMANCE</span>
-          <span className="text-[120px] font-black mx-8">SOFTWARE ENGINEERING AI AUTOMATION SCALABILITY PERFORMANCE</span>
+          <span className="text-[120px] font-black mx-8">SOFTWARE ENGINEERING AGENTIC AI LLM ORCHESTRATION AUTOMATION SCALABILITY</span>
+          <span className="text-[120px] font-black mx-8">SOFTWARE ENGINEERING AGENTIC AI LLM ORCHESTRATION AUTOMATION SCALABILITY</span>
         </div>
       </div>
     </section>

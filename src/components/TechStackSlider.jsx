@@ -5,12 +5,18 @@ import {
   ViteIcon, PostgresIcon, ExpressIcon, HtmlIcon, CssIcon, GitIcon,
   WordpressIcon, CloudflareIcon, VercelIcon, NetlifyIcon, DockerIcon, MysqlIcon,
   AnthropicIcon, OpenaiIcon, OpenClawIcon,
-  AwsIcon, IbmIcon, MicrosoftIcon, MetaIcon, HuggingFaceIcon
+  AwsIcon, IbmIcon, MicrosoftIcon, MetaIcon, HuggingFaceIcon,
+  LaravelIcon, GolangIcon, ThreeJsIcon, N8nIcon, RailwayIcon
 } from '../assets/TechIcons';
 
 const techStack = [
   { name: "React", Icon: ReactIcon },
   { name: "Node.js", Icon: NodeIcon },
+  { name: "Laravel", Icon: LaravelIcon },
+  { name: "Golang", Icon: GolangIcon },
+  { name: "Three.js", Icon: ThreeJsIcon },
+  { name: "n8n", Icon: N8nIcon },
+  { name: "Railway", Icon: RailwayIcon },
   { name: "Supabase", Icon: SupabaseIcon },
   { name: "WordPress", Icon: WordpressIcon },
   { name: "Cloudflare", Icon: CloudflareIcon },
