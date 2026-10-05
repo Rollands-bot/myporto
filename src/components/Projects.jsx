@@ -33,6 +33,17 @@ const PROJECTS = [
     type: 'web'
   },
   {
+    id: 9,
+    title: 'Noorah Fragrances — 3D E-Commerce',
+    category: 'dev',
+    tags: ['3D Web', 'E-Commerce'],
+    description: 'Luxury Arabian perfume store with scroll-driven 3D bottles modeled in Blender and a day-to-night theme that shifts as you scroll. Products, collections & prices are managed in Shopify.',
+    tech: ['SvelteKit', 'Three.js', 'GSAP', 'Blender', 'Shopify', 'Cloudflare'],
+    link: 'https://www.noorahfragrances.com',
+    image: '/assets/noorah.jpg',
+    type: 'web'
+  },
+  {
     id: 2,
     title: 'Interactive 3D Brand Campaigns',
     category: 'dev',
