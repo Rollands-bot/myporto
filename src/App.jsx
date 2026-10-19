@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import WorkedWith from './components/WorkedWith';
 import TechStackSlider from './components/TechStackSlider';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <WorkedWith />
         <TechStackSlider />
         <About />
         <Projects />

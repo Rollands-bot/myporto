@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-scroll';
+import TiltPortrait from './TiltPortrait';
 
 const Hero = () => {
   return (
-    <section className="min-h-[90vh] flex flex-col justify-center pt-32 pb-20 container-padding relative overflow-hidden bg-light">
+    <section id="hero" className="min-h-[90vh] flex flex-col justify-center pt-32 pb-20 container-padding relative overflow-hidden bg-light">
       
       {/* Dynamic Background Element */}
       <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none" />
@@ -26,8 +27,8 @@ const Hero = () => {
           <span className="text-brand-orange text-4xl md:text-6xl lg:text-7xl block mt-2">&amp; AI Specialist.</span>
         </h1>
 
-        <div className="grid md:grid-cols-12 gap-10 items-center mt-12">
-          <div className="md:col-span-7 order-2 md:order-1">
+        <div className="grid lg:grid-cols-12 gap-10 items-center mt-12">
+          <div className="lg:col-span-7 order-2 lg:order-1">
              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium mb-10">
                6+ years shipping <span className="text-dark">end-to-end platforms</span> — ERP, POS, HRIS — and <span className="text-dark">AI chatbots &amp; omnichannel CRM</span> across Meta, TikTok &amp; YouTube.
                Currently focused on agentic AI and LLM orchestration that turn operations into autopilot.
@@ -48,38 +49,11 @@ const Hero = () => {
              </div>
           </div>
 
-          <div className="md:col-span-5 order-1 md:order-2 flex justify-center md:justify-end relative">
+          <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end relative">
              {/* Abstract Shapes Decoration */}
              <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-tr from-brand-orange/20 to-blue-500/20 blur-3xl -z-10 rounded-full animate-pulse"></div>
              
-             <div className="relative group -mt-10 md:-mt-16">
-               {/* Unique Blob Shape Mask using border-radius */}
-               <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden border-4 border-white shadow-2xl transition-all duration-500 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]">
-                  <img 
-                    src="/assets/profile.png" 
-                    alt="Wahyudiyanto"
-                    className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-in-out"
-                  />
-                  {/* Overlay Gradient on Hover */}
-                  <div className="absolute inset-0 bg-brand-orange/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-               </div>
-
-               {/* Floating Badge */}
-               <motion.div 
-                 initial={{ opacity: 0, scale: 0.8 }}
-                 animate={{ opacity: 1, scale: 1 }}
-                 transition={{ delay: 0.5 }}
-                 className="absolute -bottom-4 -left-4 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
-               >
-                 <div className="bg-green-100 p-2 rounded-full">
-                   <div className="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
-                 </div>
-                 <div>
-                   <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Status</p>
-                   <p className="text-sm font-bold text-dark">Available for Hire</p>
-                 </div>
-               </motion.div>
-             </div>
+             <TiltPortrait src="/assets/profile.webp" alt="Wahyudiyanto" />
           </div>
         </div>
 
