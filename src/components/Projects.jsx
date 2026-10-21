@@ -95,6 +95,34 @@ const PROJECTS = [
     },
   },
   {
+    id: 10,
+    title: 'IPMCCS — Cost Consultancy Website & Client Portal',
+    category: 'dev',
+    tags: ['3D Web', 'Client Portal'],
+    description: 'Corporate site and client portal for a Caribbean quantity-surveying firm. A Blender-rendered building rises floor by floor as you scroll, and clients log in to follow their projects.',
+    tech: ['Next.js', 'Supabase', 'Blender', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://ipmccs.com/',
+    image: '/assets/projects/ipmccs.webp',
+    caseStudy: {
+      context: 'IPMCCS, Saint Lucia · via Wearebrand · Developer & technical lead · 2026',
+      problem:
+        'A cost consultancy serving contractors, developers and owners across Florida, Puerto Rico, the U.S. Virgin Islands and the Caribbean needed a credible corporate site and a private place where clients can see where their project stands.',
+      built: [
+        'A "scroll to build" hero: an office building animated in Blender from empty lot to handover, rendered frame by frame and played back against the scroll, with each construction stage labelled with the IPMCCS service behind it.',
+        'Service, sector and market pages for the public site on Next.js.',
+        'A client portal on Supabase: invite-only login, a project page per client, and an admin area for the IPMCCS team.',
+        'An estimate request form that accepts drawings and documents through signed uploads to private storage, with rate limiting and a sweep for abandoned uploads.',
+        'Launch hardening: canonical URLs, controlled indexing, www → apex redirect and security headers.',
+      ],
+      flow: ['Blender scene', 'Rendered frames → WebP', 'Scroll-driven hero (Next.js)', 'Estimate form → private storage', 'Supabase client portal'],
+      results: [
+        { value: 'Live', label: 'ipmccs.com' },
+        { value: 'Ground → handover', label: 'construction told through one scroll' },
+        { value: 'Portal', label: 'per-client projects + admin' },
+      ],
+    },
+  },
+  {
     id: 2,
     title: 'Interactive 3D Brand Campaigns',
     category: 'dev',
@@ -114,19 +142,14 @@ const PROJECTS = [
     link: 'https://updatesimrs.vercel.app/login',
     image: '/assets/projects/simrs.webp',
   },
-  {
-    id: 5,
-    title: 'HRIS Pro — Enterprise',
-    category: 'dev',
-    tags: ['HR Tech', 'SaaS'],
-    description: 'The complete solution for modern HR teams. Track attendance, manage payroll, and streamline recruitment.',
-    tech: ['React', 'Tailwind CSS', 'Node.js', 'Vercel'],
-    link: 'https://hris-human-resource-information-sys.vercel.app/',
-    image: '/assets/projects/hris.webp',
-  },
 ];
 
 const OTHER_WORK = [
+  {
+    title: 'HRIS Pro — Enterprise',
+    note: 'Attendance, payroll & recruitment for HR teams · React, Node.js',
+    link: 'https://hris-human-resource-information-sys.vercel.app/',
+  },
   {
     title: 'Point of Sales System',
     note: 'Retail POS with inventory management · React, Tailwind',
